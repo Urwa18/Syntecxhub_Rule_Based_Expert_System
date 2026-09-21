@@ -1,0 +1,208 @@
+{
+  "rules": [
+    {
+      "id": "R1",
+      "conditions": ["fever", "cough"],
+      "conclusion": "respiratory_infection",
+      "description": "Fever with cough suggests a respiratory infection."
+    },
+    {
+      "id": "R2",
+      "conditions": ["cough", "sore_throat"],
+      "conclusion": "respiratory_infection",
+      "description": "Cough with sore throat suggests a respiratory infection."
+    },
+    {
+      "id": "R3",
+      "conditions": ["runny_nose", "sneezing"],
+      "conclusion": "upper_airway_irritation",
+      "description": "Runny nose and sneezing indicate upper-airway irritation."
+    },
+    {
+      "id": "R4",
+      "conditions": ["nausea", "vomiting"],
+      "conclusion": "gastrointestinal_distress",
+      "description": "Nausea and vomiting indicate gastrointestinal distress."
+    },
+    {
+      "id": "R5",
+      "conditions": ["diarrhea", "abdominal_pain"],
+      "conclusion": "gastrointestinal_distress",
+      "description": "Diarrhea with abdominal pain indicates gastrointestinal distress."
+    },
+    {
+      "id": "R6",
+      "conditions": ["dry_mouth", "thirst"],
+      "conclusion": "dehydration_risk",
+      "description": "Dry mouth and thirst raise dehydration risk."
+    },
+    {
+      "id": "R7",
+      "conditions": ["vomiting", "diarrhea"],
+      "conclusion": "dehydration_risk",
+      "description": "Vomiting and diarrhea raise dehydration risk."
+    },
+    {
+      "id": "R8",
+      "conditions": ["headache", "light_sensitivity"],
+      "conclusion": "neurological_symptoms",
+      "description": "Headache with light sensitivity suggests neurological symptoms."
+    },
+    {
+      "id": "R9",
+      "conditions": ["shortness_of_breath", "cough"],
+      "conclusion": "respiratory_distress",
+      "description": "Shortness of breath with cough suggests respiratory distress."
+    },
+    {
+      "id": "R10",
+      "conditions": ["itchy_eyes", "sneezing"],
+      "conclusion": "allergic_reaction",
+      "description": "Itchy eyes and sneezing suggest an allergic reaction."
+    },
+    {
+      "id": "R11",
+      "conditions": ["rash", "itchy_eyes"],
+      "conclusion": "allergic_reaction",
+      "description": "Rash with itchy eyes suggests an allergic reaction."
+    },
+    {
+      "id": "R12",
+      "conditions": ["fever", "chills"],
+      "conclusion": "systemic_inflammation",
+      "description": "Fever and chills suggest systemic inflammation."
+    },
+    {
+      "id": "R13",
+      "conditions": ["wheezing", "chest_tightness"],
+      "conclusion": "airway_obstruction_risk",
+      "description": "Wheezing and chest tightness raise airway-obstruction concern."
+    },
+    {
+      "id": "R14",
+      "conditions": ["congestion", "runny_nose"],
+      "conclusion": "upper_airway_irritation",
+      "description": "Congestion with a runny nose indicates upper-airway irritation."
+    },
+    {
+      "id": "R15",
+      "conditions": ["respiratory_infection", "body_ache", "fever"],
+      "conclusion": "flu_suspected",
+      "description": "Respiratory infection plus fever and body ache supports suspected flu."
+    },
+    {
+      "id": "R16",
+      "conditions": ["upper_airway_irritation", "sore_throat", "congestion"],
+      "conclusion": "common_cold",
+      "description": "Upper-airway irritation with sore throat and congestion supports a common cold."
+    },
+    {
+      "id": "R17",
+      "conditions": ["neurological_symptoms", "headache", "nausea"],
+      "conclusion": "migraine",
+      "description": "Neurological symptoms with headache and nausea support migraine."
+    },
+    {
+      "id": "R18",
+      "conditions": ["gastrointestinal_distress", "abdominal_pain"],
+      "conclusion": "food_poisoning",
+      "description": "GI distress with abdominal pain supports food poisoning."
+    },
+    {
+      "id": "R19",
+      "conditions": ["respiratory_infection", "loss_of_taste"],
+      "conclusion": "covid_suspected",
+      "description": "Respiratory infection plus loss of taste supports suspected COVID-19."
+    },
+    {
+      "id": "R20",
+      "conditions": ["respiratory_infection", "loss_of_smell"],
+      "conclusion": "covid_suspected",
+      "description": "Respiratory infection plus loss of smell supports suspected COVID-19."
+    },
+    {
+      "id": "R21",
+      "conditions": ["allergic_reaction", "runny_nose"],
+      "conclusion": "allergy",
+      "description": "Allergic reaction with a runny nose supports allergy."
+    },
+    {
+      "id": "R22",
+      "conditions": ["systemic_inflammation", "body_ache", "cough"],
+      "conclusion": "flu_suspected",
+      "description": "Systemic inflammation with body ache and cough supports suspected flu."
+    },
+    {
+      "id": "R23",
+      "conditions": ["respiratory_distress", "fever"],
+      "conclusion": "covid_suspected",
+      "description": "Respiratory distress with fever supports suspected COVID-19."
+    },
+    {
+      "id": "R24",
+      "conditions": ["flu_suspected", "fatigue"],
+      "conclusion": "rest_and_fluids",
+      "description": "Suspected flu with fatigue: rest and extra fluids."
+    },
+    {
+      "id": "R25",
+      "conditions": ["covid_suspected"],
+      "conclusion": "see_doctor",
+      "description": "Suspected COVID-19: seek medical evaluation."
+    },
+    {
+      "id": "R26",
+      "conditions": ["food_poisoning", "dehydration_risk"],
+      "conclusion": "see_doctor",
+      "description": "Food poisoning with dehydration risk: seek medical care."
+    },
+    {
+      "id": "R27",
+      "conditions": ["food_poisoning"],
+      "conclusion": "rest_and_fluids",
+      "description": "Food poisoning: rest and replace fluids."
+    },
+    {
+      "id": "R28",
+      "conditions": ["allergy"],
+      "conclusion": "take_antihistamine",
+      "description": "Allergy: an antihistamine may help (educational only)."
+    },
+    {
+      "id": "R29",
+      "conditions": ["migraine"],
+      "conclusion": "rest_and_fluids",
+      "description": "Migraine: rest in a dark room and stay hydrated."
+    },
+    {
+      "id": "R30",
+      "conditions": ["common_cold"],
+      "conclusion": "rest_and_fluids",
+      "description": "Common cold: rest and fluids."
+    },
+    {
+      "id": "R31",
+      "conditions": ["respiratory_distress"],
+      "conclusion": "see_doctor",
+      "description": "Respiratory distress: seek medical care."
+    },
+    {
+      "id": "R32",
+      "conditions": ["dehydration_risk", "dizziness"],
+      "conclusion": "see_doctor",
+      "description": "Dehydration risk with dizziness: seek medical care."
+    },
+    {
+      "id": "R33",
+      "conditions": ["airway_obstruction_risk"],
+      "conclusion": "see_doctor",
+      "description": "Possible airway obstruction: seek urgent medical care."
+    },
+    {
+      "id": "R34",
+      "conditions": ["flu_suspected", "shortness_of_breath"],
+      "conclusion": "see_doctor",
+      "description": "Suspected flu with shortness of breath: see a doctor."
+    }
+  ]
+}
